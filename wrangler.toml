@@ -1,0 +1,10 @@
+# Cloudflare Pages configuration for the Tomer BarBerSHOP site.
+name = "barber"
+pages_build_output_dir = "public"
+compatibility_date = "2026-01-01"
+
+# Appointments, payments and site settings are stored here.
+[[d1_databases]]
+binding = "DB"
+database_name = "barber"
+database_id = "bb05f3aa-99ac-40c9-a088-f7bd01c52bd0"

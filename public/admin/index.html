@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tomer BarBerSHOP | מערכת ניהול</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Suez+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<div id="admin">
+  <main id="login" class="login" hidden>
+    <form class="panel" id="lg-form" novalidate>
+      <h1 class="logo" style="margin-bottom:6px"><span>Tomer <b>BarBerSHOP</b></span></h1>
+      <p style="color:var(--muted);margin-bottom:18px">כניסה למערכת הניהול</p>
+      <div class="f"><label for="lg-pw">סיסמת מנהל</label><input id="lg-pw" type="password" autocomplete="current-password" required aria-describedby="lg-err"></div>
+      <p class="err" id="lg-err" role="alert"></p>
+      <button class="btn btn-main" type="submit" style="width:100%">כניסה</button>
+    </form>
+  </main>
+  <div id="app" hidden>
+    <div class="a-top"><div class="wrap">
+      <span class="logo"><span>Tomer <b>BarBerSHOP</b></span></span><span>מערכת ניהול</span>
+      <a class="btn btn-ghost btn-sm" href="/" target="_blank" rel="noopener">לאתר</a>
+      <button class="btn btn-ghost btn-sm" id="logout" type="button" style="margin-inline-start:0">יציאה</button>
+    </div></div>
+    <main class="wrap a-body">
+      <div class="tabs" role="tablist" id="tabs" aria-label="מסכי מערכת הניהול"></div>
+      <div id="view"></div>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="admin.js" defer></script>
+</body>
+</html>
